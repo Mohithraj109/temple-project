@@ -1,0 +1,13 @@
+{
+  "title": "Temple Ticket Counter",
+  "adult": "Adult",
+  "child": "Child",
+  "total": "Total",
+  "print": "Print",
+  "settings": "Settings",
+  "report": "Daily Report",
+  "temple_ticket": "Temple Ticket",
+  "ticket_id": "Ticket ID",
+  "persons": "Persons",
+  "thank": "Thank you"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Settings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Settings</h1>
+</div>
+
+<div class="app wide">
+
+<div class="card">
+
+<div class="settings-row">
+<label>Temple Name</label>
+<input id="temple">
+</div>
+
+<div class="settings-row">
+<label>Adult Price</label>
+<input id="adultPrice" type="number">
+</div>
+
+<div class="settings-row">
+<label>Child Price</label>
+<input id="childPrice" type="number">
+</div>
+
+<h3 style="margin-top:30px;color:#ff6600">Custom Ticket Types</h3>
+<div id="typesList"></div>
+
+<input id="typeName" placeholder="Type name (e.g. Elderly)" style="width:100%;padding:12px;border:2px solid #ddd;border-radius:8px;margin-bottom:8px">
+<input id="typePrice" type="number" placeholder="Price" style="width:100%;padding:12px;border:2px solid #ddd;border-radius:8px;margin-bottom:8px">
+<button class="secondary" onclick="addNewType()" style="background:#ff6600;color:white">Add Type</button>
+
+</div>
+
+<button class="primary" onclick="save()">Save Settings</button>
+<button class="secondary" onclick="location.href='index.html'">Back to Counter</button>
+
+</div>
+
+<script src="db.js"></script>
+<script src="settings.js"></script>
+
+</body>
+</html>

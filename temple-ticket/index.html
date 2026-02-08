@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Temple Ticket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Temple Ticket Counter</h1>
+</div>
+
+<div class="app wide">
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Ticket Purchase</h3>
+
+    <div class="ticket-row">
+    <label><input type="checkbox" id="adultChk"> Adult (₹<span id="adultLabel">100</span>)</label>
+    <input type="number" id="adultQty" value="0">
+    </div>
+
+    <div class="ticket-row">
+    <label><input type="checkbox" id="childChk"> Child (₹<span id="childLabel">50</span>)</label>
+    <input type="number" id="childQty" value="0">
+    </div>
+
+    <div id="customTypes"></div>
+  </div>
+
+  <div class="card">
+    <h3>Summary</h3>
+
+    <div class="summary">
+      <span>Total Amount</span>
+      <div class="big">₹<span id="total">0</span></div>
+    </div>
+  </div>
+
+</div>
+
+<button class="primary" onclick="printTicket()">PRINT TICKET</button>
+
+<div class="row">
+<button class="secondary" onclick="location.href='settings.html'">Settings</button>
+<button class="secondary" onclick="location.href='report.html'">Daily Report</button>
+</div>
+
+</div>
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
