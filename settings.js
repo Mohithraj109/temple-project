@@ -28,7 +28,7 @@ function addNewType(){
    addType(typeName.value,typePrice.value);
    typeName.value="";
    typePrice.value="";
-   loadTypes();
+   setTimeout(()=>loadTypes(),100);
  }
 }
 
