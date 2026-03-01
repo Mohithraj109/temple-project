@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reset Settings</title>
+</head>
+<body>
+<h2>Resetting to 30...</h2>
+<script>
+let db;
+const request = indexedDB.open("TempleDB",3);
+
+request.onsuccess = e=>{
+ db = e.target.result;
+ 
+ const tx = db.transaction("settings","readwrite");
+ const store = tx.objectStore("settings");
+ 
+ store.put({key:"adult",value:"30"});
+ 
+ tx.oncomplete = ()=>{
+   alert("Price reset to 30! Redirecting...");
+   window.location.href = "index.html";
+ };
+};
+</script>
+</body>
+</html>

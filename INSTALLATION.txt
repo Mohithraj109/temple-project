@@ -1,0 +1,33 @@
+# Temple Ticket Counter - Installation Guide
+
+## How to Use:
+
+### Method 1: Direct Open (Easiest)
+1. Extract the ZIP file
+2. Double-click `index.html`
+3. It opens in your browser - ready to use!
+
+### Method 2: Install as Desktop App
+1. Extract the ZIP file
+2. Open Chrome browser
+3. Drag `index.html` into Chrome
+4. Click the install icon in address bar
+5. Now it's a desktop app!
+
+### Method 3: Local Server (Most Reliable)
+1. Extract the ZIP file
+2. Open Command Prompt in the folder
+3. Run: `python -m http.server 8000`
+4. Open browser: http://localhost:8000
+5. Click install icon
+
+## Features:
+- ✅ Works 100% offline
+- ✅ Print receipts
+- ✅ Daily reports
+- ✅ CSV export
+- ✅ Custom ticket types
+- ✅ All data saved locally
+
+## Support:
+For issues, contact: [your email]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daily Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Daily Report</h1>
+</div>
+
+<div class="app wide">
+
+<div class="card">
+<div id="report"></div>
+</div>
+
+<button class="primary" onclick="exportCSV()">Export CSV</button>
+
+<div class="row">
+<button class="secondary" onclick="location.href='index.html'">Back to Counter</button>
+<button class="secondary" onclick="clearData()" style="background:linear-gradient(135deg, #ff4444 0%, #cc0000 100%);color:white;border:none">Clear All Data</button>
+</div>
+
+</div>
+
+<script src="db.js"></script>
+<script src="report.js"></script>
+
+</body>
+</html>

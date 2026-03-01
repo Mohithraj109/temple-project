@@ -1,0 +1,28 @@
+{
+  "name": "temple-ticket-counter",
+  "version": "1.0.0",
+  "description": "Temple Ticket Counter Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Temple Admin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.temple.ticketcounter",
+    "productName": "Temple Ticket Counter",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*"
+    ]
+  }
+}
