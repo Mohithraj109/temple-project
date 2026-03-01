@@ -77,6 +77,9 @@ function uid(){
 
 function printTicket(){
 
+ // Recalculate to ensure total is current
+ calc();
+
  let u = uid();
  let now = new Date().toLocaleString();
 
